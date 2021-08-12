@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // function pallindrom (str){
+        //     str = str.toLowerCase();
+        //     let str2 =str.split('');
+        //     str2 = str2.reverse();
+        //     str2 = str2.join('');
+        //     if (str == str2) return true;
+        //     else return false;
+        // }
+        
+        // Second variant
+        const pallindrom = str => {
+            str = str.toLowerCase();
+            return str == str.split('').reverse().join('');
+        }
+        console.log(pallindrom('ABbA'));
+    </script>
+</body>
+</html>
