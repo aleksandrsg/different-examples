@@ -54,20 +54,52 @@ function strbuildCharObject(str){
 }
 
 
-function anagram (str1, str2){
-    const aCharObj = strbuildCharObject(str1);
-    const bCharObj = strbuildCharObject(str2);
+// function anagram (str1, str2){
+//     const aCharObj = strbuildCharObject(str1);
+//     const bCharObj = strbuildCharObject(str2);
 
-    if (Object.keys(aCharObj).length !== Object.keys(bCharObj).length){
-        return false;
-    }
+//     if (Object.keys(aCharObj).length !== Object.keys(bCharObj).length){
+//         return false;
+//     }
 
-    for (let char in aCharObj){
-        if(aCharObj[char]!== bCharObj[char]){
-            return false;
-        }
+//     for (let char in aCharObj){
+//         if(aCharObj[char]!== bCharObj[char]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// console.log(anagram('yes','no'));
+
+//Fibonacci 1
+
+// const fibonacci = (num) => {
+//     const result = [0,1];
+
+//     for (let i=2; i<=num; i++){
+//         const prevNum1 = result[i-1];
+//         const prevNum2 = result[i-2];
+//         sum = prevNum1+prevNum2
+//         result.push(sum);
+//     }
+
+//     return result;
+
+// }
+
+// console.log(fibonacci(10));
+
+//Fibonacci short
+
+function fibonacci(num){
+    let a =1,
+        b =1;
+    for (let i=3; i<=num; i++){
+        let c = a + b;
+            a = b;
+            b = c;
     }
-    return true;
+    return b;
 }
-
-console.log(anagram('yes','no'));
+console.log(fibonacci(10));
