@@ -1,4 +1,4 @@
-//HERE tasks for Python from interviews in Javascript 
+//HERE are 13 tasks for Python from interviews in Javascript 
 
 // #1 Please log out all elements less then 5
 
@@ -107,5 +107,68 @@
 // const a7 = [1,2,3,4,5,6,7,8,9,88];
 // console.log(a7[0],  a7[a7.length-1]);
 
-// Task #8
+// Task #8 Find files extension from files name (.mp4)
 
+// const filename ='superman_2.mp4'
+
+// const f8 = filename => {
+//     let result = filename.split('.').pop();
+//     if (result != filename) return result;
+//     throw 'Extansion not found';
+// }
+
+// console.log(f8(filename));
+
+// #9 Retun even numbers and stop if number 237 found
+
+// const a9 = [386, 462, 47, 418, 907, 344, 566, 978, 99, 103, 918, 55, 33, 200];
+
+// const f9 = arr => {
+//   for (i=0; i<arr.length;i++){
+//     if(arr[i] === 237) return;
+//     if(arr[i] %2 === 0) console.log(arr[i]);
+//   }
+// };
+// f9(a9);
+
+//#10 Whrite a programm which shows all elements from first array, which doesnt exist in second array
+
+// const a10 = ['white', 'black', 'red'];
+// const b10 = ['red', 'green', 'black'];
+
+// const f10 = (arr1, arr2) => {
+//     return arr1.filter(item => !arr2.includes(item));
+// }
+
+// console.log (f10(a10, b10));
+
+// #11 Sum numbers from Number
+
+// const a11 = 8947; //8+9+4+7 = 28
+
+// const f11 = (arr) =>{
+//     let count= 0;
+//     let b11 = arr.toString().split('').map(item => Number(item));
+//     for( i=0; i < b11.length; i++ ){
+//         count+=b11[i];
+//     };
+//     return count;
+// };
+    
+// console.log(f11(a11));
+
+// #12 Count symbol Z in the String
+
+// const s12 ='z';
+// const str12 = 'azazabrazzaza';
+
+// const res = str12.split('').filter(item => item===s12).length;
+// console.log(res);
+
+//#13 Check that all symbols are unique in the array
+
+// const a13 = [1,2,3,4,5,6,7,7];
+
+// let s13 = new Set(a13);
+
+// console.log(a13.length === s13.size);
